@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <p>
       signup works!
     </p>
-  `,
-  styles: []
+  `
 })
 export class SignupComponent implements OnInit {
 

@@ -10,8 +10,7 @@ import { switchMap } from 'rxjs/operators';
   template: `
     <h2>Наиболее популярные вопросы автора</h2>
     <app-questions [questions]="questions$"></app-questions>
-  `,
-  styles: []
+  `
 })
 export class UserComponent implements OnInit {
 

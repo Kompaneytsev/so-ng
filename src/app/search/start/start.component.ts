@@ -6,8 +6,7 @@ import { Router } from '@angular/router';
   template: `
     <input [(ngModel)]="q" placeholder="Поисковый запрос" autofocus (keyup.enter)="search()">
     <button type="submit" (click)="search()">Искать</button>
-  `,
-  styles: []
+  `
 })
 export class StartComponent implements OnInit {
 
@@ -19,6 +18,6 @@ export class StartComponent implements OnInit {
   }
 
   search() {
-    this.router.navigate(['/s/' + this.q]);
+    this.router.navigate(['/search/' + this.q]);
   }
 }

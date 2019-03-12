@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <p>
       forgot works!
     </p>
-  `,
-  styles: []
+  `
 })
 export class ForgotComponent implements OnInit {
 

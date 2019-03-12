@@ -10,8 +10,7 @@ import { Question } from '../_interfaces/question';
   template: `
     <h2>Наиболее популярные вопросы по этому тегу</h2>
     <app-questions [questions]="questions$"></app-questions>
-  `,
-  styles: []
+  `
 })
 export class TagComponent implements OnInit {
 

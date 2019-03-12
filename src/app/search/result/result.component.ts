@@ -19,8 +19,7 @@ import { switchMap } from 'rxjs/operators';
     <ng-template #loading>
       <div class="lds-circle"><div></div></div>
     </ng-template>
-  `,
-  styles: []
+  `
 })
 export class ResultComponent implements OnInit {
 

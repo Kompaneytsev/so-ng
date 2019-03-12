@@ -12,7 +12,7 @@ const routes: Routes = [
     component: StartComponent
   },
   {
-    path: 'q/:id',
+    path: 'question/:id',
     component: QuestionComponent
   },
   {
@@ -20,14 +20,16 @@ const routes: Routes = [
     component: ResultComponent,
     children: [
       {
-        path: 't/:alias',
+        path: 'tag/:alias',
         component: TagComponent,
         outlet: 'detail'
+        , pathMatch: 'full'
       },
       {
-        path: 'u/:id',
+        path: 'user/:id',
         component: UserComponent,
         outlet: 'detail'
+        , pathMatch: 'full'
       },
     ]
   },

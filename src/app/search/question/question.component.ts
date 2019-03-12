@@ -8,13 +8,12 @@ import { Answer } from '../_interfaces/answer';
 @Component({
   selector: 'app-question',
   template: `
-    <div *ngFor="let answer of answers$ | async" class="card">
+    <div *ngFor="let answer of answers$ | async">
       <div class="card-body">
         <p [innerHTML]="answer.body"></p>
       </div>
     </div>
-  `,
-  styles: []
+  `
 })
 export class QuestionComponent implements OnInit {
 
